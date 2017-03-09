@@ -27,6 +27,12 @@ public class TabLayoutDemoActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Tab 3 item"));
         tabLayout.addTab(tabLayout.newTab().setText("Tab 4 item"));
 
+//        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_email));
+//        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_dialer));
+//        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_map));
+//        tabLayout.addTab(tabLayout.newTab().setIcon(android.R.drawable.ic_dialog_info));
+
+
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
         final PagerAdapter pagerAdapter = new TabPagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
 
